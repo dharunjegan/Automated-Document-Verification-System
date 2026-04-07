@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0B0F19] text-slate-200 font-sans antialiased min-h-screen selection:bg-indigo-500/30;
+    /* Add a subtle radial gradient to the entire background */
+    background-image: radial-gradient(circle at 50% 0%, #172033 0%, #0B0F19 100%);
+    background-attachment: fixed;
+  }
+}
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F19; 
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b; 
+  border-radius: 5px;
+  border: 2px solid #0B0F19;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155; 
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl;
+}
+
+.glass-card {
+  @apply bg-[#131B2C]/80 backdrop-blur-lg border border-white/5 rounded-2xl shadow-xl hover:border-indigo-500/30 transition-all duration-300;
+}
+
+/* Glowing text and borders */
+.text-glow {
+  text-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+.box-glow {
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.15);
+}
