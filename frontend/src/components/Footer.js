@@ -44,14 +44,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/5 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-slate-600 text-xs font-medium">
-            © {new Date().getFullYear()} DocVerify. All rights reserved.
-          </p>
-          <p className="text-slate-600 text-xs font-medium flex items-center space-x-1 mt-2 sm:mt-0">
-            <span>Built with</span>
-            <FaHeart className="text-red-500 text-[10px]" />
-            <span>for SIH 2026</span>
+        <div className="border-t border-white/5 mt-10 pt-6 flex justify-center items-center">
+          <p className="text-slate-600 text-xs font-medium text-center">
+            © {new Date().getFullYear()} DocVerify. All rights reserved to jdr.
           </p>
         </div>
       </div>
